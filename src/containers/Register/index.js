@@ -1,19 +1,21 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import {bindActionCreators} from 'redux'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import * as Actions from './action'
-import {CONSTANT} from './constants'
+import { CONSTANT } from './constants'
+import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
+import RegisterComanpay from './component/register-company'
+import RegisterPersonel from './component/register-personal'
+import './style.css'
 
-import './style.less'
-
-function mapStateToProps (state, ownProps) {
-  const {RegisterReducer} = state
+function mapStateToProps(state, ownProps) {
+  const { RegisterReducer } = state
   return {
     RegisterReducer
   }
 }
 
-function mapDispatchToProps (dispatch, ownProps) {
+function mapDispatchToProps(dispatch, ownProps) {
   return {
     actions: bindActionCreators(Actions, dispatch)
   }
@@ -34,8 +36,8 @@ class Register extends Component {
 
   next = () => {
     this.props.router.push({
-      pathname:'/login', //TODO
-      query:{}
+      pathname: '/login', //TODO
+      query: {}
     })
   }
 
@@ -46,9 +48,11 @@ class Register extends Component {
   }
 
   render() {
+    let tt = false
     return (
-      <div>
-        I'm register page
+      <div className='test'>
+        <RegisterComanpay ></RegisterComanpay>
+        <RegisterPersonel></RegisterPersonel>
       </div>
     )
   }

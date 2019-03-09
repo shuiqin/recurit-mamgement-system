@@ -1,5 +1,6 @@
 
 import './index.css';
+import "antd-mobile/dist/antd-mobile.css";   // 引入官方提供的 less 样式入口文件
 import * as serviceWorker from './serviceWorker';
 
 
@@ -13,7 +14,7 @@ import configureStore from './config/configureStore'
 import {syncHistoryWithStore} from 'react-router-redux'
 import {hashHistory} from 'react-router'
 const store = configureStore()
-
+//import "your-theme-file.less";   // 用于覆盖上
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 
