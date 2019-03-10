@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import './style.less'
 
-
-class RegisterPersonel extends Component {
+class PhoneCodeCheckView extends Component {
   constructor(props) {
     super(props)
   }
@@ -30,11 +29,11 @@ class RegisterPersonel extends Component {
 
   render() {
     return (
-      <div>
-        Hello world
+      <div className="phone_code_check_container">
+     
       </div>
     )
   }
 }
 
-export default RegisterPersonel
+export default PhoneCodeCheckView

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './style.less'
 
 
-class RegisterComanpay extends Component {
+class RegisterInitEntry extends Component {
   constructor(props) {
     super(props)
   }
@@ -31,13 +31,17 @@ class RegisterComanpay extends Component {
   render() {
     return (
       <div className="login_register_vertical_center">
-        <button type="button" className="action_button">登录</button>
+        <label className="alertLabel">企业用户</label>
+        <br></br>
+        <button type="button" className="action_button">点击进入</button>
         <br></br>
         <br></br>
-        <button type="button" className="action_button">注册</button>
+        <label className="alertLabel">个人用户</label>
+        <br></br>
+        <button type="button" className="action_button">点击进入</button>
       </div>
     )
   }
 }
 
-export default RegisterComanpay
+export default RegisterInitEntry

@@ -1,6 +1,5 @@
 
 import './index.css';
-import "antd-mobile/dist/antd-mobile.css";   // 引入官方提供的 less 样式入口文件
 import * as serviceWorker from './serviceWorker';
 
 

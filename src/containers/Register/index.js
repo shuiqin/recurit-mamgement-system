@@ -3,9 +3,10 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as Actions from './action'
 import { CONSTANT } from './constants'
-import { Button, WhiteSpace, WingBlank } from 'antd-mobile';
 import RegisterComanpay from './component/register-company'
 import RegisterPersonel from './component/register-personal'
+import RegisterInitSetting from './component/register-init-setting/RegisterInitEntry'
+import RegisterInitPhoneCheck from './component/register-init-setting/RegisterInitPhoneCheck'
 import './style.css'
 
 function mapStateToProps(state, ownProps) {
@@ -51,8 +52,10 @@ class Register extends Component {
     let tt = false
     return (
       <div className='test'>
+        <RegisterInitPhoneCheck getValue='222'></RegisterInitPhoneCheck>
+        {/* <RegisterInitSetting></RegisterInitSetting>
         <RegisterComanpay ></RegisterComanpay>
-        <RegisterPersonel></RegisterPersonel>
+        <RegisterPersonel></RegisterPersonel> */}
       </div>
     )
   }
