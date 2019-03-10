@@ -52,8 +52,9 @@ class Register extends Component {
     let tt = false
     return (
       <div className='test'>
-        <RegisterInitPhoneCheck getValue='222'></RegisterInitPhoneCheck>
-        {/* <RegisterInitSetting></RegisterInitSetting>
+        <RegisterInitPhoneCheck></RegisterInitPhoneCheck>
+        {/* 
+        <RegisterInitSetting></RegisterInitSetting>
         <RegisterComanpay ></RegisterComanpay>
         <RegisterPersonel></RegisterPersonel> */}
       </div>

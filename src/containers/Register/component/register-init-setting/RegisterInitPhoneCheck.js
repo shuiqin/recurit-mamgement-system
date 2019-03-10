@@ -37,12 +37,13 @@ class RegisterInitPhoneCheck extends Component {
       <div className="login_register_vertical_center">
         <label className="alertLabel">手机号码</label>
         <br></br>
-        <button type="input" placeholder="请输入手机号码" autoFocus="true" className="action_input"></button>
+        <input type="input" placeholder="请输入手机号码" autoFocus="true" className="action_input"></input>
         <br></br>
         <br></br>
         <label className="alertLabel">验证码</label>
         <br></br>
-       
+        <PhoneCodeCheckView></PhoneCodeCheckView>
+        <button type="button" className="action_button">下一步</button>
       </div>
     )
   }
