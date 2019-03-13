@@ -1,6 +1,7 @@
 
 import './index.css';
 import * as serviceWorker from './serviceWorker';
+import 'antd-mobile/dist/antd-mobile.css'
 
 
 
@@ -14,7 +15,6 @@ import {syncHistoryWithStore} from 'react-router-redux'
 import {hashHistory} from 'react-router'
 const store = configureStore()
 //import "your-theme-file.less";   // 用于覆盖上
-
 //ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

@@ -44,7 +44,7 @@ class RegisterInitPhoneCheck extends Component {
         <label className="alertLabel">验证码</label>
         <br></br>
         <PhoneCodeCheckView></PhoneCodeCheckView>
-        <Button  type="primary" className="action_button">下一步</Button>
+        <Button  type="primary" disabled className="action_button">下一步</Button>
       </div>
     )
   }
