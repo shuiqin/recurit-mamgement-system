@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './style.less'
 import PhoneCodeCheckView from '../../../../components/PhoneCodeCheckView'
+import {Button} from 'antd-mobile'
 
 class RegisterInitPhoneCheck extends Component {
   constructor(props) {
@@ -43,7 +44,7 @@ class RegisterInitPhoneCheck extends Component {
         <label className="alertLabel">验证码</label>
         <br></br>
         <PhoneCodeCheckView></PhoneCodeCheckView>
-        <button type="button" className="action_button">下一步</button>
+        <Button  type="primary" className="action_button">下一步</Button>
       </div>
     )
   }
